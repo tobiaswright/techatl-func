@@ -1,0 +1,30 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob",
+      "path": "outcontainer/groups",
+      "connection": "atltechcal_STORAGE",
+      "direction": "out"
+    },
+    {
+      "type": "blob",
+      "name": "inputBlob",
+      "path": "outcontainer/groups",
+      "connection": "atltechcal_STORAGE",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}

@@ -1,0 +1,25 @@
+{
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 0 2 * * *"
+    },
+    {
+      "type": "blob",
+      "name": "inputBlob",
+      "path": "outcontainer/groups",
+      "connection": "atltechcal_STORAGE",
+      "direction": "in"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob",
+      "path": "meetup/events",
+      "connection": "atltechcal_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

@@ -1,0 +1,23 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "blob",
+      "name": "inputBlob",
+      "path": "meetup/events",
+      "connection": "atltechcal_STORAGE",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}
